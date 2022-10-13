@@ -20,6 +20,28 @@
     position: relative;
 }
 
+#videoOfTheMovie {
+    position: relative;
+    right: 0px;
+    left: 0;
+    z-index: -1;
+    /* display: none; */
+}
+
+@media (min-aspect-ratio: 16/9) {
+    #videoOfTheMovie {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #videoOfTheMovie {
+        width: auto;
+        height: 100%;
+    }
+}
+
 .movieName {
     position: absolute;
     width: 22%;
@@ -362,6 +384,26 @@
 }
 
 /* media queries */
+@media screen and (min-width:1316px) {
+    #videoOfTheMovie {
+        display: block;
+    }
+
+    #movieImageBeforeResponsive {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1002px) and (max-width:1317px) {
+    #videoOfTheMovie {
+        display: none;
+    }
+
+    #movieImageBeforeResponsive {
+        display: block;
+    }
+}
+
 @media screen and (min-width:360px) and (max-width:670px) {
     #appleTvDiv {
         width: 250%;
@@ -377,8 +419,14 @@
     }
 }
 
-
 @media screen and (min-width:801px)and (max-width:1003px) {
+    #movieImageBeforeResponsive {
+        display: block;
+    }
+
+    #videoOfTheMovie {
+        display: none;
+    }
 
     #leftDiv {
         margin-top: -20%;
@@ -418,6 +466,13 @@
 }
 
 @media screen and (min-width:750px)and (max-width:800px) {
+    #vidoOfTheMovie {
+        display: none;
+    }
+
+    #movieImageBeforeResponsive {
+        display: block;
+    }
 
     #leftDiv {
         margin-top: -20%;
@@ -469,6 +524,10 @@
         display: block;
     }
 
+    #videoOfTheMovie {
+        display: none;
+    }
+
     #movieNameImage {
         max-width: 280px;
     }
@@ -518,6 +577,10 @@
         display: block;
     }
 
+    #videoOfTheMovie {
+        display: none;
+    }
+
     #movieNameImage {
         max-width: 280px;
     }
@@ -560,6 +623,10 @@
 
 @media screen and (min-width:455px)and (max-width:500px) {
     #movieImageBeforeResponsive {
+        display: none;
+    }
+
+    #videoOfTheMovie {
         display: none;
     }
 
@@ -609,6 +676,10 @@
 
 @media screen and (min-width:350px)and (max-width:455px) {
     #movieImageBeforeResponsive {
+        display: none;
+    }
+
+    #videoOfTheMovie {
         display: none;
     }
 
@@ -667,6 +738,10 @@
         width: 100%;
     }
 
+    #videoOfTheMovie {
+        display: none;
+    }
+
     #appleTvMainDiv {
         width: 30%;
         text-align: center;
@@ -703,6 +778,10 @@
 }
 
 @media screen and (min-width:250px) and (max-width:802px) {
+    #videoOfTheMovie {
+        display: none;
+    }
+
     #footerTopPart {
         display: block;
     }
