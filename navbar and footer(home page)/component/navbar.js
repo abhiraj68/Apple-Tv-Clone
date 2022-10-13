@@ -4,10 +4,12 @@ function navbar() {
         <a href="#"><img src="https://tv.apple.com/assets/brands/Apple_TV_plus_logo_white-2721485772b7d06c4e33379ce990870e.svg" alt=""></a>
     </div>
     <div id="user_nav">
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <input id="search_input" oninput="input_movie()" type="search" placeholder="Search" value="">
+        <i class="fa-solid fa-magnifying-glass" id="glass"></i>
+
+        <input id="search_input"  type="search" placeholder="Search">
+        
         <button onclick="mic()">
-            <i class="fa-solid fa-microphone"></i>
+            <i  class="fa-solid fa-microphone"></i>
         </button>
 
         <img onclick="user_Login()"

@@ -1,43 +1,103 @@
+// import export section
+
+
 import navbar from "../component/navbar.js";
-console.log(navbar)
+// console.log(navbar)
 document.getElementById("navbar").innerHTML = navbar();
 
-let user_Login = () => {
-    console.log(1);
-}
-let mic = () => {
 
-    console.log(32);
-}
-let input_movie = () => {
-    let inp = document.getElementById("search_input").value;
-    console.log(inp);
-}
 
+
+
+
+
+//i/e section ends--------------->
+
+
+
+
+
+// Input Query section---------------->
+
+
+
+
+
+
+
+
+document.getElementById("glass").addEventListener("click", myfunc)
+function myfunc() {
+    console.log(100);
+}
 
 function debounce(fn, delay) {
     let timer;
     return function () {
-        if (timer) {
-            clearTimeout(fn)
-        }
+        if (timer) clearTimeout(timer);
+        timer = setTimeout(function () {
+            fn();
+        }, delay);
+    }
+}
 
+
+const data = debounce(input_movie, 1000);
+document.getElementById("search_input").addEventListener("input", data);
+
+function input_movie() {
+    let input = document.getElementById("search_input").value;
+    
+
+}
+
+
+
+
+// input section query ends------------>
+
+// video overlay button start---->
+document.getElementById("play_button").addEventListener("click", playfn);
+function playfn() {
+
+
+    if (document.getElementById("my_Video").paused == false) {
+        document.getElementById("my_Video").pause();
+        document.getElementById("play_img").src = "https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-pause-512.png";
+    }
+    else {
+        document.getElementById("my_Video").play();
+        document.getElementById("play_img").src = "https://findicons.com/files/icons/2315/default_icon/256/media_play.png";
     }
 
 }
+
 document.getElementById("vol_button").addEventListener("click", mute_un);
 function mute_un() {
     console.log(document.getElementById("my_Video").muted);
     if (document.getElementById("my_Video").muted) {
         document.getElementById("my_Video").muted = false;
-        document.getElementById("vol_img").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Mute_Icon.svg/2048px-Mute_Icon.svg.png";
+        document.getElementById("vol_img").src = "https://toppng.com/uploads/preview/speaker-icon-jpg-11549872459jv0pzshi9f.png";
     }
     else {
         document.getElementById("my_Video").muted = true;
-        document.getElementById("vol_img").src = "https://toppng.com/uploads/preview/speaker-icon-jpg-11549872459jv0pzshi9f.png";
+        document.getElementById("vol_img").src = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Mute_Icon.svg/2048px-Mute_Icon.svg.png";
     }
 
 }
+
+// video overlay button ends
+
+
+
+
+
+
+
+
+
+
+//footer query start---->
 
 document.querySelector("#q1").addEventListener("click", visible1);
 
@@ -237,3 +297,6 @@ function visible13() {
 
 
 }
+
+
+// footer query ends
