@@ -142,7 +142,7 @@ button {
 .inner_seasons:hover {
   filter: contrast(80%);
 }
-.inner_seasons > img {
+.inner_seasons > a > img {
   width: 100%;
   height: 100%;
   border-radius: 10px;
@@ -276,10 +276,7 @@ button {
   font-size: 18px;
   font-weight: bold;
 }
-.big_slides > button {
-  background-color: rgba(230, 227, 227, 0.664);
-  border-radius: 50%;
-}
+
 /* ================================================= */
 /* 5 slides  */
 
