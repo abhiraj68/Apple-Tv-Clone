@@ -89,15 +89,31 @@ async function latest_original(){
 }
 
 function showlatest_original(data){
+  
   data.map(function(elem){
     const bigdiv = document.createElement("div");
     bigdiv.setAttribute("class", "d-flex bigdiv");
   
     const imagediv = document.createElement("div")
+    const a_tag= document.createElement("a");
+    
+    
     const img = document.createElement("img");
     img.src = elem.image;
-    imagediv.append(img);
+    a_tag.append(img)
+    imagediv.append(a_tag);
+    a_tag.href = elem.link
     imagediv.setAttribute("class","imagediv");
+    a_tag.addEventListener("click", () => {
+      var name ="latest_original"
+      var id=elem.id
+      localStorage.setItem("name",name)
+      localStorage.setItem("id",id)
+    }
+
+    
+    
+    )
     
     const details = document.createElement("div")
     details.setAttribute("class","latest_details")
@@ -106,7 +122,7 @@ function showlatest_original(data){
     heading.setAttribute("class","originals_head")
   
     const sub = document.createElement("p")
-    sub.innerText = elem.subhead;
+    sub.innerText = elem.name;
     const desc = document.createElement("p");
     desc.innerText= elem.description;
     desc.setAttribute("class", "originals_head");
@@ -337,6 +353,12 @@ function showthrillingseries(data) {
     innerdiv.append(img)
     
     a_tag.append(innerdiv)
+    a_tag.addEventListener("click", () => {
+      var name ="thrillingseries"
+      var id=elem.id
+      localStorage.setItem("name",name)
+      localStorage.setItem("id",id)
+    })
   
     innerdiv.setAttribute("class","pageToScreenData")
     document.querySelector(".insidePageToScreen").append(a_tag);
@@ -403,6 +425,7 @@ function showthrillingseries(data) {
       const data=await res.json();
       
       displaymostpopularnow(data)
+      showinvasion(data)
 
     }catch(err){
       console.log(err);
@@ -412,6 +435,7 @@ function showthrillingseries(data) {
   
 
   function displaymostpopularnow(data){
+  
     data.map(function(elem){
       const innerdiv = document.createElement("div");
       const img = document.createElement("img");
@@ -419,7 +443,20 @@ function showthrillingseries(data) {
       innerdiv.append(img)
     
       const a_tag = document.createElement("a");
-      // a_tag.href = elem.link;
+      a_tag.href = elem.link;
+      // const id=elem.id;
+    
+      
+      a_tag.addEventListener("click", ()=>{
+        var name ="mostpopularnow"
+        var id=elem.id
+        localStorage.setItem("name",name),
+        localStorage.setItem("id",id)
+      }
+      
+      
+      )
+      
       a_tag.append(innerdiv)
       innerdiv.setAttribute("class","ambitionData")
       document.querySelector(".innerAmbition").append(a_tag);
@@ -487,6 +524,12 @@ function showlaughoutloud(data){
     img.src = elem.image;
     const a_tag = document.createElement("a");
     a_tag.href = elem.link;
+    a_tag.addEventListener("click", () => {
+      var name ="laughoutloud"
+      var id=elem.id
+      localStorage.setItem("name",name)
+      localStorage.setItem("id",id)
+    })
     innerdiv.append(img)
   
     a_tag.append(innerdiv)
@@ -883,7 +926,18 @@ function  showcomedyseries(data) {
     const innerdiv = document.createElement("div");
     const img = document.createElement("img");
     img.src = elem.image;
-    innerdiv.append(img)
+    const a_tag=document.createElement("a");
+    a_tag.href=elem.link
+    a_tag.addEventListener("click", () => {
+     
+      var name ="comedyseries"
+      var id=elem.id
+      localStorage.setItem("name",name)
+      localStorage.setItem("id",id)
+    })
+    
+    a_tag.append(img)
+    innerdiv.append(a_tag)
     innerdiv.setAttribute("class","comedySeriesData")
     document.querySelector(".innerComedySeries").append(innerdiv);
   })
@@ -1066,6 +1120,30 @@ function  showcomedyseries(data) {
       ]
     });
   }
+
+  function showinvasion(data){
+    data.map(function(elem){
+      var innerdiv = document.createElement("div");
+      var img = document.createElement("img");
+      img.src = elem.image;
+      innerdiv.append(img)
+    
+      var a_tag = document.createElement("a");
+      a_tag.href = elem.link;
+      a_tag.addEventListener("click", ()=>{
+        var name ="mostpopularnow"
+        var id=elem.id
+        localStorage.setItem("name",name),
+        localStorage.setItem("id",id)
+      })
+      a_tag.append(innerdiv)
+      innerdiv.setAttribute("class","invasionData")
+      document.querySelector(".sliderBox").append(a_tag);
+    })
+  }
+  
+  
+  
   
   
   
@@ -1079,4 +1157,22 @@ function  showcomedyseries(data) {
     } else {
       document.querySelector(".bottom_bar").style.bottom = "-100px";
     }
+  }
+
+
+  function sago(){
+    var name ="latest_original"
+    var id=1
+    localStorage.setItem("name",name)
+    localStorage.setItem("id",id)
+
+
+  }
+  function see(){
+    var name ="mostpopularnow"
+    var id=1
+    localStorage.setItem("name",name)
+    localStorage.setItem("id",id)
+
+
   }
