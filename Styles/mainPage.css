@@ -339,7 +339,7 @@ button {
 .findingVoicesData > img,
 .friendshipData > img,
 .dramaSeriesData > img,
-.featureFilmData > img,
+.featureFilmData  img,
 .comedySeriesData  img,
 .nonfictionData > img,
 .funForAllData > img {
@@ -470,7 +470,7 @@ button {
 }
 .big_pachinko > p,
 .amazing_planet > p,
-.kids_family > p {
+.kids_family  p {
   font-size: 15px;
   line-height: 22px;
   color: #989898;
@@ -484,7 +484,7 @@ button {
 }
 .pachinko_picture  img,
 .planet_picture  img,
-.kidFamily_picture > img {
+.kidFamily_picture  img {
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.267) 0px 3px 8px;
 }
