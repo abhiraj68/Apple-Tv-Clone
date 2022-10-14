@@ -860,8 +860,19 @@ function showfeaturefilm(data) {
   data.map(function(elem){
     const innerdiv = document.createElement("div");
     const img = document.createElement("img");
+    const a_tag=document.createElement("a");
+    a_tag.href = elem.link
+    
     img.src = elem.image;
-    innerdiv.append(img)
+    img.addEventListener("click", () => {
+      var name ="featurefilm"
+      var id=elem.id
+      localStorage.setItem("name",name)
+      localStorage.setItem("id",id)
+     
+    })
+    a_tag.append(img)
+    innerdiv.append(a_tag)
     innerdiv.setAttribute("class","featureFilmData")
     document.querySelector(".innerFeatureFilm").append(innerdiv);
   })
@@ -1174,5 +1185,14 @@ function  showcomedyseries(data) {
     localStorage.setItem("name",name)
     localStorage.setItem("id",id)
 
+
+  }
+  function sidney(){
+    
+    var name ="featurefilm"
+    var id=1
+    localStorage.setItem("name",name)
+    localStorage.setItem("id",id)
+location.href="./movieReview//movieReview.html"
 
   }

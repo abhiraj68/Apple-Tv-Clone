@@ -18,9 +18,9 @@ function closeBtn() {
 
 
 
-getmostpopular()
+getdata()
 
-  async function getmostpopular(){
+  async function getdata(){
     try{
         let name=localStorage.getItem("name")
 let id=localStorage.getItem("id")
@@ -34,8 +34,10 @@ let id=localStorage.getItem("id")
     <img src="https://is3-ssl.mzstatic.com/image/thumb/1yqG5QO2rHDxJ93yCiTmuQ/1200x450.webp" class="img-fluid"
         alt="Movie Name" id="movieNameImage">
 </div>`
-return
+
    }else{
+
+   
 
        changedata(data);
    }
@@ -48,7 +50,10 @@ return
 
 const changedata =(data) => {
     console.log(data);
-    document.getElementById("movieNameContainer").innerHTML=""
+    document.getElementById("movieNameContainer").innerHTML=`  <div class="movieName">
+    <h1>${data.name}</h1>
+</div>`
+    
     console.log(data.poster);
     document.getElementById("movieImageBeforeResponsive").src=data.poster
     document.getElementById("mobileViewImage").src=data.poster
