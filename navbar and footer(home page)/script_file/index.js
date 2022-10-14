@@ -47,7 +47,7 @@ document.getElementById("search_input").addEventListener("input", data);
 
 function input_movie() {
     let input = document.getElementById("search_input").value;
-    
+
 
 }
 
@@ -70,6 +70,12 @@ function playfn() {
         document.getElementById("play_img").src = "https://findicons.com/files/icons/2315/default_icon/256/media_play.png";
     }
 
+}
+
+const delayed = setTimeout(mydelay, 3500);
+function mydelay() {
+  
+     document.getElementById("my_Video").play();
 }
 
 document.getElementById("vol_button").addEventListener("click", mute_un);

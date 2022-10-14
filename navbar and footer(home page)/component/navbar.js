@@ -12,7 +12,7 @@ function navbar() {
             <i  class="fa-solid fa-microphone"></i>
         </button>
 
-        <img onclick="user_Login()"
+        <img id="user" onclick="user_Login()"
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7vc_Yl8ivCDmoe-ZhVAgSISHffH9OSL5fXBpb49Ax0WiJ6eCA-J7LB9RU-gXu3smgIQ8&usqp=CAU"
             alt="">
 

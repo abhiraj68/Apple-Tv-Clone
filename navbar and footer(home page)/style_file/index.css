@@ -104,6 +104,7 @@ video {
 
 }
 
+
 #over_lay_video {
 
     position: relative;
@@ -120,12 +121,14 @@ video {
     line-height: 30px;
     font-size: 26px;
     font-weight: 700;
+    width: 18%;
 }
 
 #over_lay_video h4 {
     margin-top: 15px;
     font-size: 17px;
     font-weight: 400;
+    width: 23%;
 }
 
 #over_lay_video button {
@@ -254,11 +257,12 @@ video {
 
 /* main content start */
 #main_body {
-    margin-top: -10px;
+    /* margin-top: -10px; */
     height: 1200px;
-
+    /* border: 5px solid pink; */
     background-color: gray;
     text-align: center;
+    margin-top: 34px;
 
 
 }
@@ -357,7 +361,7 @@ p {
 
 #down_device_container {
     display: flex;
-    grid-template-columns: repeat(5, 1fr);
+    /* grid-template-columns: repeat(3, 1fr); */
     margin-top: 20px;
     gap: 150px;
     justify-content: center;
@@ -460,4 +464,361 @@ p {
 
 .QNA_sub_container>div i:hover {
     color: rgb(145, 145, 145);
+}
+
+
+#branding{
+    position:absolute;
+    /* height: 100px; */
+    width: 100%;
+    /* background-color: blueviolet; */
+    /* float: inline-end; */
+    margin-top: 790px;
+}
+
+
+/* media queries */
+
+@media only screen and (min-width:1120px) and (max-width:1374px) {
+    .card_slide:last-child {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:910px) and (max-width:1119px) {
+    .card_slide:last-child {
+        display: none;
+    }
+
+    .card_slide:nth-child(5) {
+        display: none;
+    }
+
+    .card_slide {
+        margin-top: -20px;
+    }
+}
+
+@media only screen and (min-width:680px) and (max-width:910px) {
+    .card_slide:last-child {
+        display: none;
+    }
+
+    .card_slide:nth-child(5) {
+        display: none;
+    }
+
+    .card_slide:nth-child(4) {
+        display: none;
+    }
+
+
+}
+
+@media only screen and (min-width:630px) and (max-width:679px) {
+    .card_slide:last-child {
+        display: none;
+    }
+
+    .card_slide:nth-child(5) {
+        display: none;
+    }
+
+    .card_slide:nth-child(4) {
+        display: none;
+    }
+
+    .card_slide>img {
+        width: 80%;
+        height: 80%;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (min-width:720px) and (max-width:1046px) {
+    #over_lay_video>h4 {
+        display: none;
+    }
+
+
+
+
+
+
+
+}
+
+
+
+@media only screen and (min-width:520px) and (max-width:720px) {
+    .card_slide {
+        display: none;
+    }
+
+    #over_lay_video {
+        line-height: 0px;
+    }
+
+    #main_body {
+        margin-top: -240px;
+    }
+
+
+    #over_lay_video {
+        text-align: center;
+
+        padding-top: 180px;
+        /* width: 100%; */
+
+
+    }
+
+
+    #over_lay_video>h3 {
+        margin-left: 40%;
+        font-size: 18px;
+
+    }
+
+
+    #over_lay_video>h4 {
+        font-size: 10px;
+        width: 100%;
+
+        /* margin-left: 25%; */
+
+
+    }
+
+    #over_lay_video>button {
+        font-size: 10px;
+
+
+
+
+    }
+
+    #over_lay_video>p {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 10px;
+    }
+
+
+
+
+}
+
+@media only screen and (min-width:470px) and (max-width:520px) {
+    .card_slide {
+        display: none;
+    }
+
+    #over_lay_video {
+        line-height: 0px;
+    }
+
+
+    #over_lay_video>h3,
+    h4 {
+        display: none;
+
+
+    }
+
+    #main_body {
+        margin-top: -240px;
+    }
+
+
+
+
+    #over_lay_video>button {
+        font-size: 10px;
+        margin-top: 300px;
+        margin-left: 40%;
+
+
+    }
+
+    #over_lay_video>p {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 10px;
+    }
+
+
+
+
+}
+
+@media only screen and (min-width:391px) and (max-width:470px) {
+    .card_slide {
+        display: none;
+    }
+
+    #over_lay_video {
+        line-height: 0px;
+    }
+
+
+    #over_lay_video>h3,
+    h4 {
+        display: none;
+
+
+    }
+
+    #main_body {
+        margin-top: -240px;
+    }
+
+    #play {
+        display: none;
+    }
+
+    #over_lay_vol {
+        display: none;
+    }
+
+    #user_nav>button i {
+        display: none;
+    }
+
+    input {
+        width: 70%;
+    }
+
+
+
+
+
+    #over_lay_video>button {
+        font-size: 10px;
+        margin-top: 300px;
+        margin-left: 40%;
+
+
+    }
+
+    #over_lay_video>p {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 10px;
+    }
+
+
+
+
+}
+
+@media only screen and (min-width:100px) and (max-width:391px) {
+    .card_slide {
+        display: none;
+    }
+
+    #over_lay_video {
+        line-height: 0px;
+    }
+
+
+    #over_lay_video>h3,
+    h4 {
+        display: none;
+
+
+    }
+
+    #main_body {
+        margin-top: -240px;
+    }
+
+    input {
+        display: none;
+    }
+
+    #play {
+        display: none;
+    }
+
+    #over_lay_vol {
+        display: none;
+    }
+
+
+
+    #over_lay_video>button {
+        font-size: 5px;
+        margin-top: 320px;
+        height: 20px;
+
+
+
+
+    }
+
+    #over_lay_video>p {
+        margin-top: 20px;
+        /* text-align: center; */
+        font-size: 10px;
+    }
+
+
+
+
+}
+
+@media only screen and (min-width:660px) and (max-width:820px) {
+    .device p {
+        display: none;
+    }
+
+    #device_container>div:last-child {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:460px) and (max-width:660px) {
+    .device p {
+        display: none;
+    }
+
+    #device_container>div:last-child {
+        display: none;
+    }
+
+    #device_container>div:nth-child(4) {
+        display: none;
+    }
+
+    #down_device_container>div:last-child {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:280px) and (max-width:460px) {
+    .device p {
+        display: none;
+    }
+
+    #device_container>div:last-child {
+        display: none;
+    }
+
+    #device_container>div:nth-child(4) {
+        display: none;
+    }
+
+    #device_container>div:nth-child(3) {
+        display: none;
+    }
+
+    #down_device_container>div:last-child {
+        display: none;
+    }
+
+    #down_device_container>div:nth-child(2) {
+        display: none;
+    }
 }
