@@ -174,7 +174,7 @@ button {
   padding-bottom: 10px;
   padding-left: 10px;
 }
-.imagediv > img {
+.imagediv  img {
   width: 100%;
   height: 100%;
   border-radius: 15px;
@@ -226,7 +226,7 @@ button {
   padding-bottom: 8px;
   padding-left: 5px;
 }
-.comingSoonData > img {
+.comingSoonData  img {
   width: 100%;
   height: 100%;
   border-radius: 15px;
@@ -276,6 +276,8 @@ button {
   font-size: 18px;
   font-weight: bold;
 }
+.slides ul {
+  display: none;}
 
 /* ================================================= */
 /* 5 slides  */
@@ -338,7 +340,7 @@ button {
 .friendshipData > img,
 .dramaSeriesData > img,
 .featureFilmData > img,
-.comedySeriesData > img,
+.comedySeriesData  img,
 .nonfictionData > img,
 .funForAllData > img {
   width: 100%;
@@ -361,7 +363,7 @@ button {
 /* ============================================= */
 /* invasion  */
 .invasion {
-    display: none;
+   
   position: relative;
   margin-top: 15px;
   height: 600px;
@@ -480,8 +482,8 @@ button {
   padding: 5px 10px 8px 4px;
   cursor: pointer;
 }
-.pachinko_picture > img,
-.planet_picture > img,
+.pachinko_picture  img,
+.planet_picture  img,
 .kidFamily_picture > img {
   border-radius: 15px;
   box-shadow: rgba(0, 0, 0, 0.267) 0px 3px 8px;
@@ -650,3 +652,7 @@ width: 100%;
     flex-direction: column;
 } */
 
+
+
+        /* Write all the necessery css here  */
+     

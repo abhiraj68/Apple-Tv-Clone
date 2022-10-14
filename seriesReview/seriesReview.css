@@ -185,6 +185,24 @@
 #season1MovieImage:hover {
     opacity: 0.9;
 }
+#season2MovieImage:hover {
+    opacity: 0.9;
+}
+#season3MovieImage:hover {
+    opacity: 0.9;
+}
+#season4MovieImage:hover {
+    opacity: 0.9;
+}
+#season5MovieImage:hover {
+    opacity: 0.9;
+}
+#season6MovieImage:hover {
+    opacity: 0.9;
+}
+#season7MovieImage:hover {
+    opacity: 0.9;
+}
 
 #descriptionIcons {
     width: 7%;
@@ -205,13 +223,96 @@
     font-size: 13px;
     cursor: pointer;
 }
-
-#movieTitleName {
+#episode2 {
+    font-size: 13px;
+    cursor: pointer;
+}
+#episode3 {
+    font-size: 13px;
+    cursor: pointer;
+}
+#episode4 {
+    font-size: 13px;
+    cursor: pointer;
+}
+#episode5 {
+    font-size: 13px;
+    cursor: pointer;
+}
+#episode6 {
+    font-size: 13px;
+    cursor: pointer;
+}
+#episode7 {
+    font-size: 13px;
     cursor: pointer;
 }
 
+#movieTitleName1 {
+    cursor: pointer;
+    font-weight: bold;
+}
+
 #episode1:hover,
-#movieTitleName:hover {
+#movieTitleName1:hover {
+    text-decoration: underline;
+}
+#movieTitleName2 {
+    cursor: pointer;
+    font-weight: bold;
+    
+}
+
+#episode1:hover,
+#movieTitleName2:hover {
+    text-decoration: underline;
+}
+#movieTitleName3 {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#episode1:hover,
+#movieTitleName3:hover {
+    text-decoration: underline;
+}
+#movieTitleName4 {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#episode1:hover,
+#movieTitleName4:hover {
+    text-decoration: underline;
+}
+#movieTitleName5 {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#episode1:hover,
+#movieTitleName5:hover {
+    text-decoration: underline;
+}
+
+
+
+#movieTitleName6 {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#episode1:hover,
+#movieTitleName6:hover {
+    text-decoration: underline;
+}
+#movieTitleName7 {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#episode1:hover,
+#movieTitleName7:hover {
     text-decoration: underline;
 }
 
@@ -262,7 +363,31 @@
     overflow-x: auto;
 }
 
-#trailerImages {
+#trailerImages1 {
+    min-width: 300px;
+    max-width: 300px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#trailerImages2 {
+    min-width: 300px;
+    max-width: 300px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#trailerImages3 {
+    min-width: 300px;
+    max-width: 300px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#trailerImages4 {
     min-width: 300px;
     max-width: 300px;
     height: 170px;
@@ -518,12 +643,75 @@
     border-radius: 50%;
     object-fit: cover;
 }
+#CrewImage1 {
+    max-width: 120px;
+    min-width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+#CrewImage2 {
+    max-width: 120px;
+    min-width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+#CrewImage3 {
+    max-width: 120px;
+    min-width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+#CrewImage4 {
+    max-width: 120px;
+    min-width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+#CrewImage5 {
+    max-width: 120px;
+    min-width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+#CrewImage6{
+    max-width: 120px;
+    min-width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+#CrewImage7 {
+    max-width: 120px;
+    min-width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+#CrewImage8 {
+    max-width: 120px;
+    min-width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+#CrewImage9 {
+    max-width: 120px;
+    min-width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
 
 #popUp {
     width: 98vw;
     height: 150vh;
     position: absolute;
-    top: 330%;
+    top: 260%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -550,7 +738,7 @@
     display: block;
 }
 
-@media screen and (min-width:1316px) and (max-width:1500px) {
+@media screen and (min-width:1316px) {
     #videoOfTheMovie {
         display: block;
     }
