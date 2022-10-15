@@ -42,11 +42,12 @@ function debounce(fn, delay) {
 }
 
 
-const data = debounce(input_movie, 1000);
+const data = debounce(input_movie, 500);
 document.getElementById("search_input").addEventListener("input", data);
 
 function input_movie() {
     let input = document.getElementById("search_input").value;
+    console.log(input);
 
 
 }

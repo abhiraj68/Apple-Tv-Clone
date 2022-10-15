@@ -8,7 +8,7 @@ function navbar() {
 
         <input id="search_input"  type="search" placeholder="Search">
         
-        <button onclick="mic()">
+        <button id="mic">
             <i  class="fa-solid fa-microphone"></i>
         </button>
 

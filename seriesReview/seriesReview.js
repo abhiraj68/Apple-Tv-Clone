@@ -3,6 +3,9 @@
 //     document.getElementById("videoOfTheMovie").style.display = "block";
 // }, 3000);
 
+import navbar from "../navbar and footer(home page)/component/navbar.js";
+// console.log(navbar)
+document.getElementById("navbar").innerHTML = navbar();
 
 
 document.getElementById("moreBtn").addEventListener("click", openPopUp);
