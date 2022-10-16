@@ -1,18 +1,6 @@
 import navbar from "../navbar and footer(home page)/component/navbar.js";
 // console.log(navbar)
 document.getElementById("navbar").innerHTML = navbar();
-document.getElementById("mic").addEventListener("click",mic)
-function mic(){
-  console.log("eter")
-  var recog=new webkitSpeechRecognition();
-  recog.lang="en-GB"
-
-  recog.onresult=function(event){
-    console.log(event)
-
-  }
-  recog.start()
-}
 
 document.getElementById("glass").addEventListener("click", myfunc)
 function myfunc() {
@@ -79,7 +67,7 @@ function input_movie() {
              console.log("nodata")
             }
             }).catch(function (err) {
-              
+              console.log(err)
 
             });
             
@@ -1501,24 +1489,32 @@ function  showcomedyseries(data) {
     }
   }
 
-
+document.getElementById("sago").addEventListener("click",sago)
   function sago(){
+    event.preventDefault();
     var name ="latest_original"
     var id=1
     localStorage.setItem("name",name)
     localStorage.setItem("id",id)
-
+  location.href="./seriesReview/seriesReview.html"
 
   }
+
+  document.getElementById("see").addEventListener("click",see)
+
   function see(){
+    event.preventDefault();
+    console.log("see")
     var name ="mostpopularnow"
     var id=1
     localStorage.setItem("name",name)
     localStorage.setItem("id",id)
-
+    location.href="./seriesReview/seriesReview.html"
 
   }
+  document.getElementById("sidney").addEventListener("click",sidney)
   function sidney(){
+    event.preventDefault();
     
     var name ="featurefilm"
     var id=1
