@@ -12,6 +12,118 @@
         sans-serif;
 }
 
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    background-color: black;
+  
+    justify-content: space-between;
+    padding: 2px;
+    padding-top: 8px;
+  
+  }
+  
+  #logo>a>img {
+    margin-top: 7px;
+    margin-left: 35px;
+    width: 73px;
+  }
+  
+  input {
+    border: 1px solid rgb(255, 255, 255);
+    margin-right: 20px;
+  
+  
+  
+    border-radius: 7px;
+    background-color: black;
+    color: white;
+    padding-left: 35px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    font-size: 18px;
+    padding-right:23px;
+  
+  
+  }
+  
+  
+  #user_nav {
+  
+    padding: 10px;
+    display: flex;
+    margin-right: 30px;
+  
+  
+  }
+  
+  #user_nav>img {
+    width: 35px;
+  
+  }
+  
+  #user_nav>img:hover {
+  
+    cursor: pointer;
+  
+  }
+  
+  #user_nav>button {
+    position: absolute;
+    margin-left: 260px;
+    background-color: black;
+    border: 0px;
+  }
+  
+  #user_nav>button:hover {
+  
+    cursor: pointer;
+  
+  }
+  
+  .landing_navbar_button {
+    border: 0.5px;
+    color: white;
+    font-size: 13px;
+    padding: 5px;
+    background-color: #007aff;
+    border-radius: 5px;
+    /* margin: 7px; */
+    margin-left: 10px;
+    width: 60px;
+    align-items: center;
+  }
+  .d-flex {
+    display: flex !important;
+  }
+  button {
+    text-decoration: none;
+  }
+  #logo {
+    color: white;
+    text-decoration: none;
+  }
+  
+  
+  
+  
+  #user_nav i {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    margin-top: 6px;
+    margin-left: 10px;
+  }
+  
+  #user_nav i:hover {
+  
+    color: rgb(225, 91, 91);
+    cursor: pointer;
+  
+  }
+
 /* body {
     background-color: black;
 } */
@@ -45,7 +157,7 @@
 .movieName {
     position: absolute;
     width: 22%;
-    top: 6%;
+    top: 10%;
     left: 3%;
 }
 

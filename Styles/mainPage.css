@@ -3,31 +3,140 @@
 ::before {
   box-sizing: border-box;
 }
-.landing_navbar_logo > img {
-  width: 22%;
-  height: 20%;
+
+.backdrop {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
 }
-#navbar_landing {
-  width: 100%;
-  height: 6.5vh;
-  background-color: black;
-  justify-content: space-between;
-  padding: 26px 45px;
-  align-items: center;
-  top:0;
+
+.modal {
+  position: fixed;
+  z-index: 200;
+  display: none;
+  top: 12%;
+  left: 25%;
+  background: #333333;
+  border-radius: 1rem;
+  height: 80vh;
+  width: 50vw;
+  margin: auto;
+  overflow: hidden;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
 }
-.landing_navbar_logo {
+
+.closeBtn {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+}
+
+.closeBtn button {
   cursor: pointer;
+  height: 18px;
+  width: 18px;
+  border: none;
+  filter: invert(100%) contrast(50%);
+  background: url("https://tv.apple.com/static-commerce/img/close.d279866e.svg");
 }
+
+.modal-pages {
+  height: 100%;
+}
+
+.modal-pages iframe {
+  border: none;
+}
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  background-color: black;
+z-index: 1;
+  justify-content: space-between;
+  padding: 2px;
+  padding-top: 8px;
+
+}
+
+#logo>a>img {
+  margin-top: 7px;
+  margin-left: 35px;
+  width: 73px;
+}
+
+input {
+  border: 1px solid rgb(255, 255, 255);
+  margin-right: 20px;
+
+
+
+  border-radius: 7px;
+  background-color: black;
+  color: white;
+  padding-left: 35px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 18px;
+  padding-right:23px;
+
+
+}
+
+
+#user_nav {
+
+  padding: 10px;
+  display: flex;
+  margin-right: 30px;
+
+
+}
+
+#user_nav>img {
+  width: 35px;
+
+}
+
+#user_nav>img:hover {
+
+  cursor: pointer;
+
+}
+
+#user_nav>button {
+  position: absolute;
+  margin-left: 260px;
+  background-color: black;
+  border: 0px;
+}
+
+#user_nav>button:hover {
+
+  cursor: pointer;
+
+}
+
 .landing_navbar_button {
   border: 0.5px;
   color: white;
   font-size: 13px;
+  padding: 5px;
   background-color: #007aff;
   border-radius: 5px;
   /* margin: 7px; */
   margin-left: 10px;
-  width: 90px;
+  width: 60px;
   align-items: center;
 }
 .d-flex {
@@ -39,6 +148,23 @@ button {
 #logo {
   color: white;
   text-decoration: none;
+}
+
+
+
+
+#user_nav i {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  margin-top: 6px;
+  margin-left: 10px;
+}
+
+#user_nav i:hover {
+
+  color: rgb(225, 91, 91);
+  cursor: pointer;
+
 }
 
 /* ============================================ */
@@ -592,104 +718,13 @@ width: 100%;
           font-family: 'Malgun Gothic Boot', sans-serif;
       }
       
-      /* Navbar Start */
-      #navbar {
-          position: fixed;
-          top: 0;
-          left: 0;
-          right: 0;
-          z-index: 1;
-          display: flex;
-          background-color: black;
       
-          justify-content: space-between;
-          padding: 2px;
-          padding-top: 8px;
-      
-      }
-      
-      #logo>a>img {
-          margin-top: 7px;
-          margin-left: 35px;
-          width: 73px;
-      }
-      
-      input {
-          border: 1px solid rgb(255, 255, 255);
-          margin-right: 20px;
-      
-      
-      
-          border-radius: 7px;
-          background-color: black;
-          color: white;
-          padding-left: 35px;
-          font-family: 'Courier New', Courier, monospace;
-          font-weight: bold;
-          font-size: 18px;
-          padding-right: 30px;
-      
-      
-      }
-      
-      
-      #user_nav {
-      
-          padding: 10px;
-          display: flex;
-          margin-right: 30px;
-      
-      
-      }
-      
-      #user_nav>img {
-          width: 35px;
-      
-      }
-      
-      #user_nav>img:hover {
-      
-          cursor: pointer;
-      
-      }
-      
-      #user_nav>button {
-          position: absolute;
-          margin-left: 260px;
-          background-color: black;
-          border: 0px;
-      }
-      
-      #user_nav>button:hover {
-      
-          cursor: pointer;
-      
-      }
-      
-      
-      
-      
-      
-      
-      #user_nav i {
-          position: absolute;
-          color: rgb(255, 255, 255);
-          margin-top: 10px;
-          margin-left: 10px;
-      }
-      
-      #user_nav i:hover {
-      
-          color: rgb(225, 91, 91);
-          cursor: pointer;
-      
-      }
       
       /* Navbar Ends */
       
       /* video content start */
       video {
-          margin-top: -90px;
+          margin-top: -100px;
       
       }
       

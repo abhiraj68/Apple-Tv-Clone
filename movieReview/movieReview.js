@@ -1,3 +1,8 @@
+
+import navbar from "../navbar and footer(home page)/component/navbar.js";
+document.getElementById("navbar").innerHTML = navbar();
+
+
 document.getElementById("moreBtn").addEventListener("click", openPopUp);
 function openPopUp(){
     document.getElementById("popUp").style.display = "flex";
@@ -19,7 +24,10 @@ let id=localStorage.getItem("id")
     //   displaymostpopularnow(data)
    if(data.name=="Luck"){
     document.getElementById("videoOfTheMovie").src=data.videolink
-   
+    document.getElementById("movieNameContainer").innerHTML=`  <div class="movieName">
+    <img src="https://is2-ssl.mzstatic.com/image/thumb/nhoexFUgkNwuPvkLk-QpQg/1200x450.webp" class="img-fluid"
+        alt="Movie Name" id="movieNameImage">
+</div>`
 
    }else{
 
@@ -37,7 +45,9 @@ let id=localStorage.getItem("id")
 
 function changedata(data){
     console.log(data);
-    document.getElementById("movieName").innerText=data.name
+    document.getElementById("movieNameContainer").innerHTML=`  <div class="movieName">
+    <h1>${data.name}</h1>
+</div>`
     document.getElementById("movieImageBeforeResponsive").src=data.poster
     document.getElementById("mobileViewImage").src=data.poster
     document.getElementById("videoOfTheMovie").src=data.videolink
