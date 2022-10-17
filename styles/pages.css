@@ -171,7 +171,7 @@
     right: 50%;
   }
   
-  #myForm {
+  #mform {
     display: flex;
     flex-direction: column;
     font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial,
@@ -203,8 +203,8 @@
     outline: none;
   }
   
-  #myForm input[type="date"]::-webkit-inner-spin-button,
-  #myForm input[type="date"]::-webkit-calendar-picker-indicator {
+  #form input[type="date"]::-webkit-inner-spin-button,
+  #form input[type="date"]::-webkit-calendar-picker-indicator {
     display: none;
     -webkit-appearance: none;
   }
@@ -259,7 +259,7 @@
     border-radius: 0.5rem;
   }
   
-  #myForm label {
+  #form label {
     color: #999;
     font-size: 0.85rem;
     font-weight: 500;
@@ -272,7 +272,7 @@
     align-items: flex-start;
   }
   
-  #myForm input[type="checkbox"] {
+  #form input[type="checkbox"] {
     width: 1rem;
     height: 1rem;
     margin-top: 1.5px;
