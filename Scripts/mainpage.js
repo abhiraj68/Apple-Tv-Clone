@@ -70,7 +70,7 @@ signIn.addEventListener("click", function () {
   alert("Logged Out Succesfully !");
   
  
- }else if(localStorage.getItem("isLogined")=="false"){
+ }else {
   console.log("afsaf")
   openModal();
   iframe.src = "./signupandlogin/sign-in.html";
