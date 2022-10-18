@@ -8,10 +8,10 @@
   recognition.onresult=function(event){
   console.log(event.results[0][0].transcript)
   document.getElementById("search_input").value=event.results[0][0].transcript;
+  data()
   
   }
   recognition.start();
-  data()
   
   })
  
