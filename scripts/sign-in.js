@@ -10,10 +10,10 @@ appleID.addEventListener("click", function () {
     console.log("working");
     if (signInData[i].email == inputID.value) {
       person = signInData[i].fname + " " + signInData[i].lname;
-      localStorage.setItem("isLogined", true);
-      alert("Logged In Succesfully !");
-      document.querySelector(".modal-pages").style.display = "none";
-     location.href = "../index.html";
+      // localStorage.setItem("isLogined", true);
+      // alert("Logged In Succesfully !");
+      
+      window.location.href = "login-pass.html";
       // window.location.href = "login-pass.html";
       flag = true;
       break;

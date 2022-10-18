@@ -38,6 +38,10 @@ passSubmit.addEventListener("click", function () {
     }
   }
   if (flag) {
+    localStorage.setItem("isLogined", "true");
+    alert("Logged In Succesfully !");
+
+
     closeModal();
     advert.style.display = "none";
     jumboBtn.style.display = "none";

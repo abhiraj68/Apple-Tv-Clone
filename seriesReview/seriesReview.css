@@ -20,7 +20,7 @@
     right: 0;
     display: flex;
     background-color: black;
-  
+    z-index: 5;
     justify-content: space-between;
     padding: 2px;
     padding-top: 8px;
@@ -38,7 +38,7 @@
     margin-right: 20px;
   
   
-  
+    
     border-radius: 7px;
     background-color: black;
     color: white;

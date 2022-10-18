@@ -1,5 +1,17 @@
 
 
+
+ 
+  
+
+
+
+
+
+
+
+
+
 var signIn = document.querySelector("#signin");
 var backdrop = document.querySelector(".backdrop");
 var closebtn = document.querySelector(".close-modal_btn");
@@ -22,9 +34,16 @@ function closeModal() {
   body.style.overflow = "auto";
   iframe.src = "sign-in.html";
 }
-setInterval(function() {if(localStorage.getItem("isLogined")=="true"){
-  console.log("hiii")
-  closeModal();
+setInterval(function()
+
+
+{
+  var logged = localStorage.getItem("isLogined")
+  
+  if(localStorage.getItem("isLogined")=="true"){
+    if (logged=="true") {
+      document.getElementById("sign-in").innerText = "Log Out"
+    }
 }}, 1000);
 
 // jumboBtn.addEventListener("click", function () {
@@ -38,8 +57,27 @@ setInterval(function() {if(localStorage.getItem("isLogined")=="true"){
 // });
 
 signIn.addEventListener("click", function () {
+  
+ 
+
+ 
+ if(localStorage.getItem("isLogined")=="true"){
+  
+  console.log("Sign")
+  document.getElementById("sign-in").innerText = "Sign In"
+  localStorage.setItem("isLogined", "false");
+  location.reload();
+  alert("Logged Out Succesfully !");
+  
+ 
+ }else if(localStorage.getItem("isLogined")=="false"){
+  console.log("afsaf")
   openModal();
   iframe.src = "./signupandlogin/sign-in.html";
+ }
+    
+//  rajappanabhiraj@gmail.com
+ 
 });
 
 backdrop.addEventListener("click", function () {
@@ -487,7 +525,11 @@ function showlatest_original(data){
     img.src = elem.image;
     a_tag.append(img)
     imagediv.append(a_tag);
-    a_tag.href = elem.link
+    if(localStorage.getItem("isLogined")=="true"){
+      a_tag.href = elem.link;
+    }else{
+     
+    }
     imagediv.setAttribute("class","imagediv");
     a_tag.addEventListener("click", () => {
       var name ="latest_original"
@@ -734,7 +776,12 @@ function showthrillingseries(data) {
     const img = document.createElement("img");
     img.src = elem.image;
     const a_tag = document.createElement("a");
-    a_tag.href = elem.link;
+    if(localStorage.getItem("isLogined")=="true"){
+      a_tag.href = elem.link;
+    }else{
+     
+    }
+    
     innerdiv.append(img)
     
     a_tag.append(innerdiv)
@@ -828,10 +875,11 @@ function showthrillingseries(data) {
       innerdiv.append(img)
     
       const a_tag = document.createElement("a");
-      a_tag.href = elem.link;
-      // const id=elem.id;
-    
-      
+      if(localStorage.getItem("isLogined")=="true"){
+        a_tag.href = elem.link;
+      }else{
+       
+      }
       a_tag.addEventListener("click", ()=>{
         var name ="mostpopularnow"
         var id=elem.id
@@ -908,7 +956,9 @@ function showlaughoutloud(data){
     const img = document.createElement("img");
     img.src = elem.image;
     const a_tag = document.createElement("a");
-    a_tag.href = elem.link;
+    if(localStorage.getItem("isLogined")=="true"){
+      a_tag.href = elem.link;
+    }
     a_tag.addEventListener("click", () => {
       var name ="laughoutloud"
       var id=elem.id
@@ -1068,7 +1118,11 @@ function showextraordinary(data) {
       img.src = elem.image;
       innerdiv.append(img)
       const a_tag = document.createElement("a");
-      a_tag.href = elem.link;
+      if(localStorage.getItem("isLogined")=="true"){
+        a_tag.href = elem.link;
+      }else{
+       
+      }
       a_tag.append(innerdiv)
     
       innerdiv.setAttribute("class","friendshipData")
@@ -1246,7 +1300,11 @@ function showfeaturefilm(data) {
     const innerdiv = document.createElement("div");
     const img = document.createElement("img");
     const a_tag=document.createElement("a");
-    a_tag.href = elem.link
+    if(localStorage.getItem("isLogined")=="true"){
+      a_tag.href = elem.link;
+    }else{
+     
+    }
     
     img.src = elem.image;
     img.addEventListener("click", () => {
@@ -1323,7 +1381,9 @@ function  showcomedyseries(data) {
     const img = document.createElement("img");
     img.src = elem.image;
     const a_tag=document.createElement("a");
-    a_tag.href=elem.link
+    if(localStorage.getItem("isLogined")=="true"){
+      a_tag.href = elem.link;
+    }
     a_tag.addEventListener("click", () => {
      
       var name ="comedyseries"
@@ -1525,7 +1585,9 @@ function  showcomedyseries(data) {
       innerdiv.append(img)
     
       var a_tag = document.createElement("a");
-      a_tag.href = elem.link;
+      if(localStorage.getItem("isLogined")=="true"){
+        a_tag.href = elem.link;
+      }
       a_tag.addEventListener("click", ()=>{
         var name ="mostpopularnow"
         var id=elem.id
@@ -1558,11 +1620,14 @@ function  showcomedyseries(data) {
 document.getElementById("sago").addEventListener("click",sago)
   function sago(){
     event.preventDefault();
-    var name ="latest_original"
-    var id=1
-    localStorage.setItem("name",name)
-    localStorage.setItem("id",id)
-  location.href="./seriesReview/seriesReview.html"
+    if(localStorage.getItem("isLogined")=="true"){
+      var name ="latest_original"
+      var id=1
+      localStorage.setItem("name",name)
+      localStorage.setItem("id",id)
+    location.href="./seriesReview/seriesReview.html"
+    }
+    
 
   }
 
@@ -1570,23 +1635,28 @@ document.getElementById("sago").addEventListener("click",sago)
 
   function see(){
     event.preventDefault();
-    console.log("see")
-    var name ="mostpopularnow"
-    var id=1
-    localStorage.setItem("name",name)
-    localStorage.setItem("id",id)
-    location.href="./seriesReview/seriesReview.html"
-
+    if(localStorage.getItem("isLogined")=="true"){
+      console.log("see")
+      var name ="mostpopularnow"
+      var id=1
+      localStorage.setItem("name",name)
+      localStorage.setItem("id",id)
+      location.href="./seriesReview/seriesReview.html"
+  
+    }
+    
   }
   document.getElementById("sidney").addEventListener("click",sidney)
   function sidney(){
     event.preventDefault();
-    
-    var name ="featurefilm"
-    var id=1
-    localStorage.setItem("name",name)
-    localStorage.setItem("id",id)
-location.href="./movieReview/movieReview.html"
+    if(localStorage.getItem("isLogined")=="true"){
+      var name ="featurefilm"
+      var id=1
+      localStorage.setItem("name",name)
+      localStorage.setItem("id",id)
+  location.href="./movieReview/movieReview.html"
+    }
+   
 
   }
 

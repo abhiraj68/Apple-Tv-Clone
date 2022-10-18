@@ -12,14 +12,10 @@ function navbar() {
             <i  class="fa-solid fa-microphone"></i>
         </button>
 
-        <div class="landing_navbar_signin ml-5">
-        <button onclick="opensignin()" id="signin" class="landing_navbar_button d-flex">
-          
-          <div class="logo_text">
-            <a id="logo" >Sign In</a>
-          </div>
-        </button>
-      </div>
+        <img id="user" 
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7vc_Yl8ivCDmoe-ZhVAgSISHffH9OSL5fXBpb49Ax0WiJ6eCA-J7LB9RU-gXu3smgIQ8&usqp=CAU"
+        alt="">
+
 
     </div>`;
 }
