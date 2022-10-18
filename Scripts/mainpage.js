@@ -22,6 +22,10 @@ function closeModal() {
   body.style.overflow = "auto";
   iframe.src = "sign-in.html";
 }
+setInterval(function() {if(localStorage.getItem("isLogined")=="true"){
+  console.log("hiii")
+  closeModal();
+}}, 1000);
 
 // jumboBtn.addEventListener("click", function () {
 //   openModal();

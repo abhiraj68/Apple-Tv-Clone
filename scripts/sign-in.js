@@ -13,7 +13,7 @@ appleID.addEventListener("click", function () {
       localStorage.setItem("isLogined", true);
       alert("Logged In Succesfully !");
       document.querySelector(".modal-pages").style.display = "none";
-     location.href = "index.html";
+     location.href = "../index.html";
       // window.location.href = "login-pass.html";
       flag = true;
       break;
