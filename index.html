@@ -50,7 +50,7 @@
     <div id="user_nav">
         <i class="fa-solid fa-magnifying-glass" id="glass"></i>
 
-        <input id="search_input"  type="search" placeholder="Search">
+        <input id="search_input"  type="search" placeholder="Search" >
         
         <button id="mic">
             <i  class="fa-solid fa-microphone"></i>
@@ -808,20 +808,6 @@
 
 
 <script>
-  document.getElementById("mic").addEventListener("click",()=>{
-
-var recognition= new webkitSpeechRecognition();
-
-recognition.lang="en=GB";
-
-recognition.onresult=function(event){
-console.log(event.results[0][0].transcript)
-document.getElementById("search_input").value=event.results[0][0].transcript;
-
-}
-recognition.start();
-
-
-})
+ 
   
 </script>
