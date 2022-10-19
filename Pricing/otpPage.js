@@ -5,7 +5,7 @@ document.querySelector("button").addEventListener("click", check)
         var input = document.getElementById("code").value == "123";
         if(input){
             alert("Payment Successful...! Welcome to Apple Community.");
-            location.href="pricing.html"
+            location.href="../index2.html"
         }
         else{
             alert("Incorrect OTP");

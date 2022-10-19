@@ -47,6 +47,8 @@ passSubmit.addEventListener("click", function () {
     jumboBtn.style.display = "none";
     jumboInfo.forEach(function (el) {
       el.style.display = "none";
+      location.href="../index.html"
+      
     });
     signBtn.classList.remove("class", "sign-in_btn");
     signBtn.setAttribute("id", "sign-out_btn");

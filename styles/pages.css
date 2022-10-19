@@ -168,7 +168,7 @@ body::-webkit-scrollbar-thumb {
 #floated-logo {
   position: fixed;
   top: 3%;
-  right: 50%;
+  right: 2%;
 }
 
 #form {

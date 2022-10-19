@@ -9,6 +9,7 @@ document.getElementById("navbar").innerHTML = navbar();
 
 
 document.getElementById("moreBtn").addEventListener("click", openPopUp);
+document.getElementById("closeBtnForPopUp").addEventListener("click", closeBtn);
 function openPopUp(){
     document.getElementById("popUp").style.display = "flex";
 }

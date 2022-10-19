@@ -39,7 +39,7 @@ input[type="text" ],
     margin-bottom: 16px;
     resize: vertical;
 }
-input[type="number" ],
+input[type="number" ],input[inputmode="numeric"],
   select,
   textarea {
     width: 100%;

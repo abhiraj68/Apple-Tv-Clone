@@ -30,7 +30,7 @@
           <i class="fa-brands fa-apple fa-2xl"></i>
         </div>
         <p class="main-heading">Create Apple ID</p>
-        <form id="form">
+        <form id="form" onsubmit="return getData()" >
           <input type="text" id="fname" placeholder="First Name" required />
           <input type="text" id="lname" placeholder="Last Name" required />
           <input
@@ -55,7 +55,7 @@
             id="pass"
             placeholder="Password"
             required
-          />
+          /> 
           <div class="terms">
             <input type="checkbox" name="agree" id="check" required />
             <div class="check-text">

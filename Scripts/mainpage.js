@@ -1639,6 +1639,8 @@ document.getElementById("sago").addEventListener("click",sago)
       localStorage.setItem("name",name)
       localStorage.setItem("id",id)
     location.href="./seriesReview/seriesReview.html"
+    }else{
+      alert("Login is required")
     }
     
 
@@ -1656,9 +1658,13 @@ document.getElementById("sago").addEventListener("click",sago)
       localStorage.setItem("id",id)
       location.href="./seriesReview/seriesReview.html"
   
+    }else{
+      alert("Login is required")
     }
     
   }
+
+
   document.getElementById("sidney").addEventListener("click",sidney)
   function sidney(){
     event.preventDefault();
@@ -1668,6 +1674,8 @@ document.getElementById("sago").addEventListener("click",sago)
       localStorage.setItem("name",name)
       localStorage.setItem("id",id)
   location.href="./movieReview/movieReview.html"
+    }else{
+      alert("Login is required")
     }
    
 
