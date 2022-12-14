@@ -18,7 +18,7 @@ var emailcheack=/^[A-Za-z_]{3,}@[A-Za-z]{3,}[.]{1}[A-Za-z.]{2,6}$/
   if(passwordcheck.test(data.pass)){
 
     }else{
-      alert("password must contain Special characters")
+      alert("password must contain Special characters ")
       return;
     }
   if(emailcheack.test(data.email)){
