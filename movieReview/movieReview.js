@@ -18,7 +18,7 @@ getdata()
     try{
         let name=localStorage.getItem("name")
 let id=localStorage.getItem("id")
-      const res=await fetch(`https://apple-tv-api.herokuapp.com/${name}/${id}`);
+      const res=await fetch(`https://apple-tv-api.glitch.me/${name}/${id}`);
       const data=await res.json();
      
     //   displaymostpopularnow(data)

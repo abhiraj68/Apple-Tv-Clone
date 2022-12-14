@@ -148,7 +148,7 @@ function input_movie() {
       document.getElementById("unhide").innerHTML=""
 
       let movieName = document.getElementById("search_input").value.replaceAll(" ","+");
-      let url = `https://apple-tv-api.herokuapp.com/Searchdata?q=${movieName}`;
+      let url = `https://apple-tv-api.glitch.me/Searchdata?q=${movieName}`;
       let fetchPromise = fetch(url)
       .then(function (res) {
           res.json().then(function (data) {
@@ -440,7 +440,7 @@ watchpremieres()
 
 async function watchpremieres(){
   try{
-    const res=await fetch('https://apple-tv-api.herokuapp.com/watch_premieres');
+    const res=await fetch('https://apple-tv-api.glitch.me/watch_premieres');
     const data=await res.json();
     
     showwatchpremieres(data)
@@ -514,7 +514,7 @@ function showwatchpremieres(data){
 
 async function latest_original(){
   try{
-    const res=await fetch('https://apple-tv-api.herokuapp.com/latest_original');
+    const res=await fetch('https://apple-tv-api.glitch.me/latest_original');
     const data=await res.json();
     
     showlatest_original(data)
@@ -619,7 +619,7 @@ function showlatest_original(data){
 
 async function coming_soon(){
   try{
-    const res=await fetch('https://apple-tv-api.herokuapp.com/coming_soon');
+    const res=await fetch('https://apple-tv-api.glitch.me/coming_soon');
     const data=await res.json();
     
     showcoming_soon(data)
@@ -773,7 +773,7 @@ function showcoming_soon(data) {
 
 async function thrillingseries(){
   try{
-    const res=await fetch('https://apple-tv-api.herokuapp.com/thrillingseries');
+    const res=await fetch('https://apple-tv-api.glitch.me/thrillingseries');
     const data=await res.json();
     
     showthrillingseries(data)
@@ -866,7 +866,7 @@ function showthrillingseries(data) {
 
   async function getmostpopular(){
     try{
-      const res=await fetch('https://apple-tv-api.herokuapp.com/mostpopularnow');
+      const res=await fetch('https://apple-tv-api.glitch.me/mostpopularnow');
       const data=await res.json();
       
       displaymostpopularnow(data)
@@ -953,7 +953,7 @@ function showthrillingseries(data) {
 
   async function laughoutloud(){
     try{
-      const res=await fetch('https://apple-tv-api.herokuapp.com/laughoutloud');
+      const res=await fetch('https://apple-tv-api.glitch.me/laughoutloud');
       const data=await res.json();
       
       showlaughoutloud(data)
@@ -1029,7 +1029,7 @@ function showlaughoutloud(data){
 
   async function extraordinary(){
     try{
-      const res=await fetch('https://apple-tv-api.herokuapp.com/extraordinary');
+      const res=await fetch('https://apple-tv-api.glitch.me/extraordinary');
       const data=await res.json();
       
       showextraordinary(data)
@@ -1115,7 +1115,7 @@ function showextraordinary(data) {
 
   async function powerOFfriendship(){
     try{
-      const res=await fetch('https://apple-tv-api.herokuapp.com/powerOFfriendship');
+      const res=await fetch('https://apple-tv-api.glitch.me/powerOFfriendship');
       const data=await res.json();
       
       showpowerOFfriendship(data)
@@ -1198,7 +1198,7 @@ function showextraordinary(data) {
 
   async function dramaseries(){
     try{
-      const res=await fetch('https://apple-tv-api.herokuapp.com/dramaseries');
+      const res=await fetch('https://apple-tv-api.glitch.me/dramaseries');
       const data=await res.json();
       
       showdramaseries(data)
@@ -1298,7 +1298,7 @@ function  showdramaseries(data) {
 
   async function featurefilm(){
     try{
-      const res=await fetch('https://apple-tv-api.herokuapp.com/featurefilm');
+      const res=await fetch('https://apple-tv-api.glitch.me/featurefilm');
       const data=await res.json();
       
       showfeaturefilm(data)
@@ -1378,7 +1378,7 @@ comedyseries()
 
   async function comedyseries(){
     try{
-      const res=await fetch('https://apple-tv-api.herokuapp.com/comedyseries');
+      const res=await fetch('https://apple-tv-api.glitch.me/comedyseries');
       const data=await res.json();
       
       showcomedyseries(data)
@@ -1532,7 +1532,7 @@ function  showcomedyseries(data) {
 
   async function funforall(){
     try{
-      const res=await fetch('https://apple-tv-api.herokuapp.com/funforall');
+      const res=await fetch('https://apple-tv-api.glitch.me/funforall');
       const data=await res.json();
       
       showfunforall(data)
