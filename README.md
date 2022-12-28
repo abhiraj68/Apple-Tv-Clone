@@ -1,3 +1,8 @@
+AppleTv_Clone
+This is the streaming website specially for Apple users, that offers online entertainment service for Apple users.
+
+Live website- https://appletvindia.netlify.app/
+
 You can read about this project here:-https://medium.com/@abhirajrajappan/2nd-collaborative-project-at-masai-school-as-apple-tv-clone-66efd253562a
 
 
